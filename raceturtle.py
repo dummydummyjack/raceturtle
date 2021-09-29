@@ -7,7 +7,11 @@ new =[]
 ypos = [-70, -40, -10, 20, 50, 80]
 s = Screen()
 s.setup(width=500, height=400)
+
 ubet = s.textinput(title="make your bet ", prompt="which turtle will win the race? enter the color?")
+if ubet == None:
+    sys.exit(0)
+
 
 
 game = False
